@@ -21,11 +21,18 @@
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Jh-yR-bcF">
                         <rect key="frame" x="10" y="10" width="300" height="110"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-1H-2pg">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3ym-tu-U9f"/>
+                                    <constraint firstAttribute="width" constant="40" id="yYe-aK-ed3"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-qK-6yr">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="61"/>
+                                <rect key="frame" x="60" y="0.0" width="180" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="azaaaaaaarzgsfskjfbsjhbfsjhbfjsbfjsbfjsbfjbhjhfb" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXH-QF-oI1">
-                                        <rect key="frame" x="10" y="10" width="220" height="41"/>
+                                        <rect key="frame" x="10" y="10" width="160" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -39,17 +46,17 @@
                                     <constraint firstAttribute="trailing" secondItem="WXH-QF-oI1" secondAttribute="trailing" constant="10" id="tM9-Wk-O5z"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-1H-2pg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="UX2-hG-Iae">
                                 <rect key="frame" x="260" y="0.0" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3ym-tu-U9f"/>
-                                    <constraint firstAttribute="width" constant="40" id="yYe-aK-ed3"/>
+                                    <constraint firstAttribute="height" constant="40" id="Soh-sK-pMO"/>
+                                    <constraint firstAttribute="width" constant="40" id="kgV-CK-iKY"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                     </stackView>
                 </subviews>
-                <color key="backgroundColor" name="BrandLightPurple"/>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstItem="9Jh-yR-bcF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5WM-JJ-YGF"/>
                     <constraint firstAttribute="bottom" secondItem="9Jh-yR-bcF" secondAttribute="bottom" constant="10" id="BAz-cb-Voh"/>
@@ -59,17 +66,19 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="label" destination="WXH-QF-oI1" id="uYq-en-DQf"/>
-                <outlet property="messageBubble" destination="Q9S-qK-6yr" id="fJU-cT-AXo"/>
-                <outlet property="rightImageView" destination="XuU-1H-2pg" id="fc3-Kg-Wt8"/>
+                <outlet property="label" destination="WXH-QF-oI1" id="cwB-eh-EaY"/>
+                <outlet property="leftImageView" destination="XuU-1H-2pg" id="XUb-O8-iMy"/>
+                <outlet property="messageBubble" destination="Q9S-qK-6yr" id="4F5-8M-nkk"/>
+                <outlet property="rightImageView" destination="UX2-hG-Iae" id="J6p-rZ-UAt"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
-            <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97254908080000002" green="0.95686274770000002" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="BrandPurple">
             <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
