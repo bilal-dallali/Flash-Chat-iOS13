@@ -1,5 +1,8 @@
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
+# !!! Don't forget to install the package IQKeyboardManager, or else the app won't work, go to 'file', 'add package' and and install it through the URL (https://github.com/hackiftekhar/IQKeyboardManager)
+# Select 'up to next major' and then the name of the project on 'add to project', and select the version 6.5.3 next to 'up to next major', finally click on add package, it will take a few minutes to install.
+
 # Flash-Chat
 
 ## Our Goal
